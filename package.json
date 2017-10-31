@@ -1,7 +1,7 @@
 {
   "name": "koajs-starter-kit",
   "version": "1.0.0",
-  "description": "Simple starter kit for using KoaJS to build a RESTful API server written in ES7.",
+  "description": "Simple starter kit for using KoaJS to build a web application server written in ES7.",
   "main": "index.js",
   "repository": "https://github.com/codeaholicguy/koajs-starter-kit.git",
   "author": "Hoang Nhat Nguyen <hoangnn93@gmail.com>",
@@ -9,6 +9,7 @@
   "scripts": {
     "start": "nodemon src/index.js --exec babel-node",
     "build": "babel src -d build",
+    "test": "jest",
     "lint-eslint": "eslint *.js",
     "precommit": "lint-staged"
   },
@@ -16,6 +17,9 @@
     "*.js": [
       "lint-eslint"
     ]
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -34,8 +38,10 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.14.3",
+    "jest": "^21.2.1",
     "lint-staged": "^4.3.0",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "supertest": "^3.0.0"
   },
   "dependencies": {
     "bluebird": "^3.5.1",

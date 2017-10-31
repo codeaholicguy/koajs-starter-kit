@@ -45,6 +45,10 @@ export default class App {
     })
   }
 
+  server() {
+    return this._httpServer
+  }
+
   //
   // Private methods
   //
