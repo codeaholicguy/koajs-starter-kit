@@ -23,6 +23,20 @@ export default class SampleController extends BaseController {
 }
 ```
 
+## Commands
+
+```
+yarn start
+```
+
+Start your web application at `localhost:3000`. You can also specify the port by `PORT=8080 yarn start`.
+
+```
+yarn test
+```
+
+If you want to run the test suite. I use Jest for testing.
+
 ## License
 
 MIT
