@@ -1,0 +1,9 @@
+{
+  "name": "koajs-starter-kit",
+  "version": "1.0.0",
+  "description": "Simple starter kit for using KoaJS to build a RESTful API server written in ES7.",
+  "main": "index.js",
+  "repository": "https://github.com/codeaholicguy/koajs-starter-kit.git",
+  "author": "Hoang Nhat Nguyen <hoangnn93@gmail.com>",
+  "license": "MIT"
+}
