@@ -1,4 +1,4 @@
-const server = require('../../src/index')
+const server = require('../../src/index').app.server()
 const request = require('supertest')
 
 afterEach(() => {
