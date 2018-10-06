@@ -1,4 +1,4 @@
-import Router from 'koa-66'
+import Router from 'koa-router'
 
 export default class BaseController {
   constructor() {
