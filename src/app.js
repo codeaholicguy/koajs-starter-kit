@@ -1,6 +1,6 @@
 import Koa from 'koa'
 import http from 'http'
-import Router from 'koa-66'
+import Router from 'koa-router'
 import cors from 'koa-cors'
 import morgan from 'koa-morgan'
 import serve from 'koa-static'
@@ -57,7 +57,7 @@ export default class App {
     const controllers = config.creators.map(Controller => new Controller())
 
     for (const controller of controllers) {
-      router.mount(config.prefix, controller.router)
+      router.use(config.prefix, controller.router.routes())
     }
 
     return router.routes()
